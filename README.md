@@ -102,7 +102,7 @@ xy=ca.mm(b.float())#required float number
 
 The gradient for a complex scalar is available.
 
-```
+```python
 ca=ComplexTensor(a)
 ca.requires_grad = True
 cc=ComplexTensor(c)
@@ -113,5 +113,21 @@ print(ca.grad)
 #tensor([[3.+2.j, 4.+4.j, 3.+4.j],
 #       [3.+2.j, 4.+4.j, 3.+4.j],
 #       [3.+2.j, 4.+4.j, 3.+4.j]], dtype=complex64)
+```
+
+Complex Layer: the basic element mulitiply is comple mul
+
+```python
+from torch_complex.complex_layer import *
+
+layer= ComplexConv2d(100,128,(3,3))
+bn   = ComplexMixNorm2D(128)
+relu = ComplexReLU()
+pool = ComplexMaxPool2d(3)
+
+x = torch.randn(1,100,40,40,2);print(x.shape)
+x=layer(x);print(x.shape)
+x=bn(x);print(x.shape)
+x=relu(x);print(x.shape)
 ```
 
