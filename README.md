@@ -1,4 +1,9 @@
 Another option is use https://github.com/ivannz/cplxmodule
+
+The gradient of the Complex number would hold very different form under different defination. 
+
+This repository is supposed to archive if no further update.
+
 --------------
 This project develop from [**pytorch-complex-tensor **](https://github.com/williamFalcon/pytorch-complex-tensor). 
 
@@ -47,15 +52,18 @@ For Binary operator, both requirement satisfied
 
 So, in order to get the differentiation, we only need the Automatic differentiation of real part of f(z).
 
-The  [**pytorch-complex-tensor **](https://github.com/williamFalcon/pytorch-complex-tensor) version set the complex graident is 
+<!-- The  [**pytorch-complex-tensor **](https://github.com/williamFalcon/pytorch-complex-tensor) version set the complex graident is 
 
 ![img](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20f%28z%29%7D%7B%5Cpartial%20z%7D%3D%5Cfrac%7B%5Cpartial%20u%7D%7B%5Cpartial%20x%7D+i%5Cfrac%7B%5Cpartial%20u%7D%7B%5Cpartial%20y%7D)
-
-which is wrong for complex number.
+ -->
+<!-- which is wrong for complex number.
 
 ​For real number X, the gradient of f(z,X) is 
 
 ![img](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20f%28z%2CX%29%7D%7B%5Cpartial%20x%7D%3D%5Cfrac%7B%5Cpartial%20u%7D%7B%5Cpartial%20x%7D+i%5Cfrac%7B%5Cpartial%20v%7D%7B%5Cpartial%20y%7D)
+
+ -->
+
 
 ##### Example
 
