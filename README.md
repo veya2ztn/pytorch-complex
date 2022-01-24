@@ -1,4 +1,6 @@
-This project is partially based on [**pytorch-complex-tensor **](https://github.com/williamFalcon/pytorch-complex-tensor). 
+Another option is use https://github.com/ivannz/cplxmodule
+--------------
+This project develop from [**pytorch-complex-tensor **](https://github.com/williamFalcon/pytorch-complex-tensor). 
 
 Basicly, this new class is a wrapper of (...,2) shape.
 
